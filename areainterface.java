@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-interface Shape {
+interface Shape1 {
     void printArea();
 }
 
-class Rectangle implements Shape {
+class Rectangle1 implements Shape1 {
     int length = 5;
     int breadth = 6;
 
@@ -14,7 +14,7 @@ class Rectangle implements Shape {
     }
 }
 
-class Square implements Shape {
+class Square1 implements Shape1 {
     int side = 4;
 
     public void printArea() {
@@ -24,10 +24,10 @@ class Square implements Shape {
 
 class areainterface {
     public static void main(String[] args) throws IOException {
-        Rectangle rectangle = new Rectangle();
+        Rectangle1 rectangle = new Rectangle1();
         rectangle.printArea();
 
-        Square square = new Square();
+        Square1 square = new Square1();
         square.printArea();
     }
 }
